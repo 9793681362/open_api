@@ -1,0 +1,2 @@
+INFO     runtime_20230511:test_case_execution.py:20 执行的用例ID：API005
+INFO     runtime_20230511:test_case_execution.py:40 断言失败

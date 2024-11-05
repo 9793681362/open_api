@@ -1,0 +1,10 @@
+-
+  login:
+      case_id: 1
+      title: 获取token
+      method: POST
+      url: "https://open-t.handyprint.cn/api/admin/login"
+      data:
+        "enc_params": 'eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIxMTExMTEiLCJnZWV0ZXN0X2NoYWxsZW5nZSI6IjgxMmI0YmEyODdmNWVlMGJjOWQ0M2JiZjViYmU4N2ZiODYiLCJnZWV0ZXN0X3NlY2NvZGUiOiJkODczYWNjMjQ0NzQzMWM1ZDI4NzM4MjMyZDJhZjI5MHxqb3JkYW4iLCJnZWV0ZXN0X3ZhbGlkYXRlIjoiZDg3M2FjYzI0NDc0MzFjNWQyODczODIzMmQyYWYyOTAifQ=='
+      expect:
+        code: 200

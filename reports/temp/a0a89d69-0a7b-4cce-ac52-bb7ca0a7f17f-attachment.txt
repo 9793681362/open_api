@@ -1,0 +1,1 @@
+INFO     runtime_20230510:test001_get_token.py:14 正在获取token,token为：{'X-Token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY4MzY4MTMzOSwiZXhwIjoxNjg2MzY5MzM5fQ.eyJhZG1pbl9pZCI6MTAwfQ.rBAndudonNP9N6bVSq1Bwsk0pPK-utGGYxDET5HpmjNeyzFY7moXk_mqrRg2uddCPe2wEQOA0pdALyhwRYta8Q'}

@@ -1,0 +1,14 @@
+-
+
+  payment_exception:
+    case_id: $case_id
+    title: 付款异常
+    url: $url
+    data: $data
+    is_positive: $is_positive
+    request_type: $request_type
+    expected_result: $expected_result
+    status_code: $status_code
+    field_name: $field_name
+
+
