@@ -38,31 +38,29 @@
       method: POST
       url: "https://open-t.handyprint.cn/api/product/standard"
       data:
-        vendor_name: "上海雅滔文化传播有限公司（测试）"
+        vendor_name: 上海雅滔文化传播有限公司（测试）
         category_id: 31611
-        image_files: [ "(binary)", "(binary)", "(binary)" ]
-        image_types: [ 0, 1, 2 ]
+        image_types: [0,1,2]
         require_images: 1
-        product_params2:
+        product_params2: '{"delivery_time": "1", "product_size": "1", "sku_weight": "1", "produce_cost": "1", "sku_type": 0, "output_type": 0, "image_type": 1, "pic_num": "1", "freight_name": "测试购物车模板", "freight_id": 406}'
+        vendor_id: 2321
+      expect:
+        code: 200
 
-        product_images:
-          - status: "ready"
-            name: "1.jpg"
-            size: 371292
-            percentage: 0
-            uid: 1742449234436
-            url: "blob:https://open-t.handyprint.cn/4ad6a3cb-9b23-41b8-971b-0082c8757d47"
-          - status: "ready"
-            name: "2.jpg"
-            size: 66268
-            percentage: 0
-            uid: 1742449237724
-            url: "blob:https://open-t.handyprint.cn/5560857a-9ee6-4873-913a-cd99b79dccf3"
-          - status: "ready"
-            name: "3.jpg"
-            size: 652153
-            percentage: 0
-            uid: 1742449240744
-            url: "blob:https://open-t.handyprint.cn/17964144-7185-4081-be61-badbc3306a2e"
+
+
+  new_product2:
+      case_id: 1
+      title: 单个新增商品
+      method: POST
+      url: "https://open-t.handyprint.cn/api/order/produces?page=1&limit=10&approve_state=-1&prod_state=-1&order_type2=-1&check_state=-1&order_type=-1"
+      data:
+        page: 1
+        limit: 10
+        approve_state: -1
+        prod_state: -1
+        order_type2: -1
+        check_state: -1
+        order_type: -1
       expect:
         code: 200

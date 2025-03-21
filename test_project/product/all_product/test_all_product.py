@@ -24,3 +24,22 @@ class TestOuterProds():
         print(data)
         ls = RestClient().post(url, data=data)
         print(ls)
+        print(ls.status_code)
+        print(ls.text)
+
+
+
+class TestOuterProds2():
+
+    @pytest.mark.parametrize('caseinfo',YamlUtil(LOGIN_YAML_PATH,).read_testcase_yaml())
+    def test_new_product2(self,caseinfo):
+        """上传发票"""
+        url = caseinfo['new_product2']['url']
+        print(url)
+        data = caseinfo['new_product2']['data']
+        print(data)
+        ls = RestClient().get(url,params=data)
+        print(ls)
+        print(ls.status_code)
+        print(ls.text)
+

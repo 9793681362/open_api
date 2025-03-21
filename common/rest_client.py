@@ -73,6 +73,7 @@ class RestClient:
         # 添加 token 到请求头
         headers = kwargs.pop('headers', {})
         headers.update(self.token)
+        print(headers)
         kwargs['headers'] = headers
 
         # 根据请求方法发送请求
